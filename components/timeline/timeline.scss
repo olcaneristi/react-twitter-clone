@@ -1,0 +1,181 @@
+@import "../assets/variables.scss";
+
+section.timeline {
+  border-left: 1px solid $primary-line;
+  border-right: 1px solid $primary-line;
+
+  /* Header Component */
+
+  .home-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 8px 15px;
+    border-bottom: 1px solid $primary-line;
+    cursor: pointer;
+
+    .pic-mobile {
+      display: none;
+    }
+
+    span {
+      font-size: $fontSize + 3px;
+      font-weight: $fontWeight + 400;
+    }
+
+    .propicon {
+      font-size: $fontSize + 7px;
+      padding: 6px 6px 0 6px;
+      color: $color-curiousBlue;
+
+      &:hover {
+        background-color: $navicon-hover-bg;
+        border-radius: 30px;
+        transition: all 0.2s ease;
+      }
+    }
+  }
+
+  /* TweetBox */
+  .tweet-box {
+    display: flex;
+    padding: 12px 15px 0px 15px;
+    border-bottom: 10px solid $secondary-line;
+
+    .tweet-photo {
+      .tweet-img {
+        border-radius: 100px;
+      }
+    }
+    .tweet-text-body {
+      width: 510px;
+      padding: 10px 0 10px 0px;
+
+      .tweet-area {
+        height: 60px;
+        padding-left: 8px;
+        textarea {
+          background: transparent;
+          border: none;
+          outline: none;
+          color: $color-white;
+          font-size: $fontSize + 3px;
+          width: 100%;
+          resize: none;
+        }
+      }
+      .icons-tweet {
+        display: flex;
+        justify-content: space-between;
+
+        .smalltweet {
+          padding: 7px 15px;
+          background-color: $btn-primary;
+          border: none;
+          outline: none;
+          border-radius: 30px;
+          cursor: pointer;
+          color: $color-white;
+          font-weight: $fontWeight + 300;
+          font-size: $fontSize - 1px;
+
+          &:hover {
+            background-color: $btn-hover;
+            transition: all 0.2s ease;
+          }
+        }
+      }
+      .import-icon {
+        fill: $color-dodgeBlue;
+        align-items: center;
+        color: $color-dodgeBlue;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        .micon,
+        .micon3,
+        .micon5 {
+          font-size: $fontSize + 7px;
+          padding: 6px 7px 1px 7px;
+
+          &:hover {
+            background-color: $navicon-hover-bg;
+            border-radius: 30px;
+            transition: all 0.2s ease;
+          }
+        }
+      }
+    }
+  }
+
+  /* Post Feed Component */
+
+  .post-feed {
+    padding: 8px 15px 0px 15px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .timeline {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+  }
+
+  .tweet-text-body {
+    width: 95% !important;
+  }
+
+  .micon3,
+  .micon5 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section.timeline {
+    border: none;
+    .tweet-box {
+      display: none !important;
+    }
+
+    .post-feed {
+      height: 91.5% !important;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .pic-mobile {
+      display: flex !important;
+      object-fit: contain;
+      border-radius: 50%;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .home-header {
+      display: flex;
+      align-items: center;
+      justify-content: inherit;
+      padding-left: 16px;
+      cursor: none;
+
+      justify-content: center;
+      text-align: center;
+      span {
+        margin-left: 2em;
+        font-size: $fontSize + 2px;
+        text-align: inherit;
+      }
+
+      .propicon {
+        margin-left: auto;
+        cursor: pointer;
+      }
+    }
+  }
+}

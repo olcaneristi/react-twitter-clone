@@ -1,0 +1,232 @@
+@import "../assets/variables.scss";
+
+/* Sidebar Component */
+section.sidebar {
+  padding-left: 10px;
+  margin-right: 30px;
+
+  .navigation-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    a.nav-search {
+      display: none;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      color: $color-white;
+      padding: 10px;
+      margin-top: 8px;
+      text-decoration: none;
+      padding-right: 10px;
+      width: auto;
+
+      &:hover {
+        background-color: $navicon-hover-bg;
+        border-radius: 30px;
+        transition: all 0.1s ease-in-out;
+        color: $color-dodgeBlue;
+      }
+
+      svg {
+        font-size: $fontSize + 10px;
+        margin-right: 20px;
+      }
+    }
+    .twitter-logo {
+      padding: 10px;
+      margin-top: 0;
+
+      &:hover {
+        color: $color-white;
+      }
+
+      .tweet-bird {
+        font-size: $fontSize + 15px;
+        margin-right: 0;
+      }
+    }
+    p {
+      font-size: $fontSize + 3px;
+      font-weight: $fontWeight + 300;
+    }
+  }
+
+  .send-tweet {
+    background-color: $btn-primary;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 0px 30px;
+    cursor: pointer;
+    color: $color-white;
+    width: 229px;
+    height: 49px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: $fontWeight + 300;
+    font-size: $fontSize - 1px;
+
+    &:hover {
+      background-color: $btn-hover;
+      transition: all 0.2s ease;
+    }
+
+    .tweet-body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      svg {
+        margin-right: 5px;
+        display: none;
+      }
+    }
+  }
+
+  .profile-bar {
+    margin-top: 85px;
+
+    .profile-button {
+      display: flex;
+      height: 59px;
+      padding: 10px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      outline: none;
+
+      &:hover {
+        background-color: $navicon-hover-bg;
+        border-radius: 30px;
+        transition: all 0.1s ease-in-out;
+      }
+    }
+
+    .profile-pic {
+      align-items: center;
+      display: flex;
+      .pic-small {
+        border-radius: 100px;
+        object-fit: contain;
+      }
+    }
+
+    .profile-name {
+      margin: 0 10px;
+    }
+
+    .name-class {
+      color: $color-white;
+      font-size: $fontSize - 1px;
+      font-weight: $fontWeight + 300;
+    }
+    .username-class {
+      color: $color-lightGray;
+      font-weight: $fontWeight;
+      font-size: $fontSize - 1px;
+      text-align: left;
+    }
+    svg {
+      margin-left: 40px;
+      color: $color-white;
+      font-size: $fontSize + 2.75px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  section.sidebar {
+    margin-right: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+
+    // Navigation button ayarlari
+
+    .navigation-bar {
+      align-items: center;
+
+      .twitter-logo {
+        padding: 8px;
+      }
+      .tweet-bird {
+        margin-top: 1px;
+      }
+      svg {
+        margin-right: 0px !important;
+      }
+    }
+
+    // Yazilar kayboluyor.
+    p,
+    span,
+    .arrow-button {
+      display: none;
+    }
+
+    // Tweet butonu media ayari
+
+    .send-tweet {
+      padding: 16px 14px;
+      width: auto;
+      margin-left: -1px;
+
+      svg {
+        display: flex !important;
+        font-size: $fontSize + 5px;
+        margin-right: 0px !important;
+      }
+    }
+
+    // Profil fotografi ayarlamasi
+
+    .profile-name,
+    .arrow-button {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sidebar {
+    display: block;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-top: 1px solid $primary-line;
+
+    .profile-bar,
+    .tweet-bar {
+      display: none !important;
+    }
+
+    .navigation-bar {
+      flex-direction: row !important;
+      align-items: center;
+      justify-content: space-around;
+
+      a {
+        margin-top: 0px !important;
+      }
+
+      .twitter-logo,
+      .nav-explore,
+      .nav-book,
+      .nav-profile,
+      .nav-lists,
+      .nav-more {
+        display: none !important;
+      }
+
+      a.nav-search {
+        display: flex !important;
+      }
+    }
+  }
+}

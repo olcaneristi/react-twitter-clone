@@ -1,0 +1,31 @@
+@import "../components/sidebar/sidebar.scss";
+@import "../components/timeline/timeline.scss";
+@import "../components/explore/explore.scss";
+@import "./variables.scss";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: $global-font;
+}
+
+body {
+  background-color: $body-bg;
+  color: white;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100vh;
+  position: static;
+}
+
+@media screen and (max-width: 500px) {
+  .app {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

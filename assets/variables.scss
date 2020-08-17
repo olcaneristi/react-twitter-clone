@@ -1,0 +1,29 @@
+/* Most used Font type, size, weight*/
+
+$fontSize: 16px;
+$fontWeight: 400;
+$global-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Ubuntu, "Helvetica Neue", sans-serif;
+
+/* Background colors */
+$body-bg: rgb(21, 32, 43);
+$btn-primary: rgb(29, 161, 242);
+$input-primary: rgb(37, 51, 65);
+$trends-primary: #192734;
+
+/* Background-Hover colors */
+$navicon-hover-bg: rgba(29, 161, 242, 0.1);
+$btn-hover: rgb(26, 145, 218);
+$trends-hover-bg: rgba(255, 255, 255, 0.03);
+
+/* Text and Fill Colors */
+$color-white: #ffffff;
+$color-dodgeBlue: #1da1f2;
+$color-curiousBlue: #1a91da;
+$color-lightGray: #8899a6;
+$color-black: #000000;
+
+/* Border line and hover colors */
+$primary-line: #38444d;
+$secondary-line: #253341;
+$hover-line: #1da1f2;

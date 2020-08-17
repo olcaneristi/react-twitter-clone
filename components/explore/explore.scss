@@ -1,0 +1,267 @@
+@import "../assets/variables.scss";
+
+section.explore {
+  margin-left: 30px;
+  min-width: 350px;
+
+  // Search Bar
+
+  .search-bar {
+    margin-top: 5.2px;
+    margin-bottom: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    input {
+      width: 100%;
+      height: 40px;
+      border-radius: 9999px;
+      border: 0px;
+      outline: none;
+      background-color: $input-primary;
+      padding-left: 3.2em;
+      text-align: left;
+      font-size: $fontSize - 1px;
+      font-weight: $fontWeight;
+      color: $color-white;
+
+      &:focus {
+        background: transparent;
+        border: 1px solid $hover-line;
+      }
+    }
+    ::placeholder {
+      color: $color-lightGray;
+    }
+
+    svg {
+      font-size: $fontSize + 3px;
+      position: absolute;
+      margin-left: 15px;
+      color: #8899a6;
+    }
+  }
+
+  // Trends
+
+  .trends {
+    min-height: auto;
+    border-radius: 15px;
+    border: 0px;
+    background: $trends-primary;
+    margin-bottom: 15px;
+
+    .trend-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 8px 5px 15px;
+      border-bottom: 1px solid $primary-line;
+
+      span {
+        font-weight: $fontWeight + 400;
+        font-size: $fontSize + 3px;
+      }
+
+      button {
+        background: none;
+        border: none;
+        display: flex;
+        padding: 8px;
+        outline: none;
+
+        &:hover {
+          background-color: $navicon-hover-bg;
+          border-radius: 30px;
+          transition: all 0.1s ease;
+        }
+      }
+      svg {
+        font-size: $fontSize + 6.5px;
+        color: $color-dodgeBlue;
+        cursor: pointer;
+      }
+    }
+    .trend-list {
+      padding: 8px 15px 10px 15px;
+      border-bottom: 1px solid $primary-line;
+      cursor: pointer;
+
+      &:hover {
+        background: $trends-hover-bg;
+        transition: all 0.2s ease-out;
+      }
+
+      .trend-category {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      button {
+        background: none;
+        border: none;
+        display: flex;
+        padding: 5px;
+        cursor: pointer;
+        outline: none;
+
+        &:hover {
+          background-color: $navicon-hover-bg;
+          border-radius: 30px;
+          transition: all 0.2s ease;
+        }
+
+        svg {
+          color: $color-lightGray;
+          font-size: $fontSize - 1px;
+
+          &:hover {
+            color: $color-dodgeBlue;
+          }
+        }
+      }
+
+      p {
+        font-size: $fontSize - 1px;
+        color: $color-white;
+        font-weight: $fontWeight + 300;
+        margin-bottom: 5px;
+      }
+
+      span {
+        font-size: $fontSize - 3px;
+        color: $color-lightGray;
+        font-weight: $fontWeight;
+      }
+    }
+
+    .trend-more {
+      padding: 15px;
+      cursor: pointer;
+
+      a {
+        color: $color-dodgeBlue;
+        text-decoration: none;
+        font-size: $fontSize - 1px;
+      }
+      &:hover {
+        background: $trends-hover-bg;
+        transition: all 0.2s ease-out;
+        outline-style: none;
+      }
+    }
+  }
+  .who-follow {
+    min-height: auto;
+    border-radius: 15px;
+    border: 0px;
+    background: $trends-primary;
+    margin-bottom: 15px;
+
+    .follow-header {
+      padding: 10px 15px;
+      border-bottom: 1px solid $primary-line;
+
+      span {
+        font-weight: $fontWeight + 400;
+        font-size: $fontSize + 3px;
+      }
+    }
+
+    .follow-list {
+      display: flex;
+      padding: 10px 15px;
+      border-bottom: 1px solid $primary-line;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover {
+        background: $trends-hover-bg;
+        transition: all 0.2s ease-out;
+        outline-style: none;
+      }
+
+      img {
+        border-radius: 50%;
+        object-fit: contain;
+      }
+
+      .follow-pic {
+        align-items: center;
+        display: flex;
+      }
+
+      .follow-username {
+        margin: 0 10px;
+      }
+
+      .name-class {
+        color: $color-white;
+        font-size: $fontSize - 1px;
+        font-weight: $fontWeight + 300;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .username-class {
+        color: $color-lightGray;
+        font-weight: $fontWeight;
+        font-size: $fontSize - 1px;
+      }
+
+      .follow-button {
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        min-height: 30px;
+        border-radius: 9999px;
+        background: transparent;
+        border: 1px solid $btn-primary;
+        outline: none;
+        cursor: pointer;
+        color: $color-dodgeBlue;
+        font-weight: $fontWeight + 300;
+        font-size: $fontSize - 1px;
+
+        &:hover {
+          background-color: $navicon-hover-bg;
+          transition: all 0.2s ease;
+        }
+      }
+    }
+
+    .follow-more {
+      padding: 15px;
+      cursor: pointer;
+
+      a {
+        color: $color-dodgeBlue;
+        text-decoration: none;
+        font-size: $fontSize - 1px;
+      }
+      &:hover {
+        background: $trends-hover-bg;
+        transition: all 0.2s ease-out;
+        outline-style: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1095px) {
+  section.explore {
+    min-width: 288px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1005px) {
+  .explore {
+    display: none;
+  }
+}
