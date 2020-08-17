@@ -200,6 +200,7 @@ section.sidebar {
     margin: 0 !important;
     padding: 0 !important;
     border-top: 1px solid $primary-line;
+    min-height: 60px;
 
     .profile-bar,
     .tweet-bar {
@@ -210,6 +211,7 @@ section.sidebar {
       flex-direction: row !important;
       align-items: center;
       justify-content: space-around;
+      height: 100%;
 
       a {
         margin-top: 0px !important;
