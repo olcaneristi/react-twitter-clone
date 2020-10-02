@@ -15,7 +15,7 @@ function Timeline() {
       <div className="home-header">
         <img
           className="pic-mobile"
-          src="https://pbs.twimg.com/profile_images/1288864030334091264/9QM__Gx__400x400.jpg"
+          src="https://pbs.twimg.com/profile_images/1309954136125865990/-KFHwCjo_400x400.jpg"
           height="28"
           weight="28"
         />{" "}
@@ -28,7 +28,7 @@ function Timeline() {
         <div className="tweet-photo">
           <img
             className="tweet-img"
-            src="https://pbs.twimg.com/profile_images/1288864030334091264/9QM__Gx__400x400.jpg"
+            src="https://pbs.twimg.com/profile_images/1309954136125865990/-KFHwCjo_400x400.jpg"
             height="49"
             weight="49"
           />

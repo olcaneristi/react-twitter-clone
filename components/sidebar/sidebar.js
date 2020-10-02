@@ -72,7 +72,7 @@ function Sidebar({ active }) {
           <div className="profile-pic">
             <img
               className="pic-small"
-              src="https://pbs.twimg.com/profile_images/1288864030334091264/9QM__Gx__400x400.jpg"
+              src="https://pbs.twimg.com/profile_images/1309954136125865990/-KFHwCjo_400x400.jpg"
               height="39"
               weight="39"
             />
