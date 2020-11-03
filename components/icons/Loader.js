@@ -4,8 +4,8 @@ function SvgTwitter(props) {
   return (
     <svg
       className="tweet__loading"
-      width="5em"
-      height="5em"
+      width="3.5em"
+      height="3.5em"
       viewBox="0 0 24 24"
       fill="none"
       {...props}
