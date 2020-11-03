@@ -1,0 +1,11 @@
+.tweet__loading {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: auto;
+
+  path {
+    fill: rgb(29, 161, 242);
+  }
+}
