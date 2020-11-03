@@ -1,9 +1,9 @@
 .tweet__loading {
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin: 0 auto;
+  min-height: 100vh !important;
+  justify-content: center !important;
+  align-items: center !important;
+  display: flex !important;
+  margin: 0 auto !important;
   path {
     fill: rgb(29, 161, 242);
   }
