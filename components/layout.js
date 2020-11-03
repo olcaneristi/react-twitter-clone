@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import Sidebar from "../components/sidebar/sidebar"
 import Timeline from "../components/timeline/timeline"
 import Explore from "../components/explore/explore"
-import Loader from "../components/icons/Loader"
+import Loader from "../components/loading/loaderspinner"
 
 function Layout() {
   const [loading, setLoading] = useState(true)
