@@ -3,7 +3,6 @@ import * as React from "react"
 function SvgTwitter(props) {
   return (
     <svg
-      className="tweet__loading"
       width="3.5em"
       height="3.5em"
       viewBox="0 0 24 24"
