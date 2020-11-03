@@ -11,6 +11,8 @@ module.exports = withCSS(
         use: {
           loader: "url-loader",
           options: {
+            webpackImporter: false,
+
             limit: 100000
           }
         }
